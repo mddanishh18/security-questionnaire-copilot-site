@@ -1,0 +1,56 @@
+name: Join the waitlist
+description: Tell us you are interested in the future end-to-end version of Security Questionnaire Review.
+title: "[Waitlist] "
+labels: ["waitlist"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest. This waitlist is for the future end-to-end product that may add approved evidence storage, answer reuse, and customer-ready outputs.
+
+        **Do not include confidential company information, customer data, passwords, API keys, or secrets.**
+  - type: input
+    id: role
+    attributes:
+      label: Your role
+      description: Example: Security, GRC, compliance, founder, sales engineer, IT.
+      placeholder: Security / GRC
+    validations:
+      required: true
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often do you handle security questionnaires?
+      options:
+        - Weekly
+        - Monthly
+        - A few times a year
+        - Rarely
+        - Just evaluating
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would you want the end-to-end version to solve?
+      description: Describe the workflow or feature that would save you the most time.
+      placeholder: Reuse approved answers across customer questionnaires...
+    validations:
+      required: true
+  - type: dropdown
+    id: paid
+    attributes:
+      label: Would your organization consider paying for it?
+      options:
+        - Yes
+        - Maybe
+        - No
+    validations:
+      required: true
+  - type: input
+    id: price
+    attributes:
+      label: What monthly price range would feel reasonable?
+      placeholder: "$50-$200/month"
+    validations:
+      required: false
