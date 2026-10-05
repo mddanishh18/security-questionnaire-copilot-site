@@ -1,6 +1,6 @@
 # Security Questionnaire Copilot
 
-Public website and support/policy pages for the Security Questionnaire Copilot plugin.
+Public website, waitlist, and support/policy pages for the Security Questionnaire Review plugin.
 
 Enable GitHub Pages for this repository and publish the main branch.
 
